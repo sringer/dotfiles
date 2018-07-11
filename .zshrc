@@ -482,7 +482,7 @@ export PATH=~/bin:$PATH
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # add npm global modules to path
 export PATH="$HOME/.npm-global/bin:$PATH"
-export npm_config_prefix=~/.npm-global
+#export npm_config_prefix=~/.npm-global
 ################
 # pyenv stuff
 export PYENV_ROOT="$HOME/.pyenv"
@@ -493,3 +493,5 @@ fi
 ################
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# init nvm
+source /usr/share/nvm/init-nvm.sh
