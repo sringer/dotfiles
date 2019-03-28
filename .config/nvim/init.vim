@@ -13,7 +13,7 @@ nmap <leader><space> :Ag
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " map nerdtree to ,n
 nmap <leader>nt :NERDTreeToggle<cr>
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 nnoremap <C-p> :FZF<CR>
@@ -38,8 +38,8 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 Plug 'udalov/kotlin-vim', { 'for': 'kotlin' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 "Plug 'mhartington/nvim-typescript', { 'for': 'typescript' }
-Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
-Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
+" Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
+" Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
 Plug 'editorconfig/editorconfig-vim'
 let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
 "let g:EditorConfig_core_mode = 'external_command'
