@@ -1,7 +1,6 @@
 #!/bin/sh
 # Chrome app launcher
 
-parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 touch $HOME/.chrome_app_list
 choice=$(cat $HOME/.chrome_app_list | dmenu -p "Launch Chrome App")
 
