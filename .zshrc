@@ -493,5 +493,3 @@ fi
 ################
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# init nvm
-source /usr/share/nvm/init-nvm.sh
