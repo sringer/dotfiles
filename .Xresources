@@ -105,7 +105,7 @@ xscreensaver.Dialog.logo.width: 16
 xscreensaver.Dialog.logo.height: 16
 
 
-Xft.dpi:        120
+!Xft.dpi:        120
 Xft.antialias:	true
 Xft.hinting:    true
 Xft.hinstyle:   hintslight

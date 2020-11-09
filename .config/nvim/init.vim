@@ -29,12 +29,11 @@ else
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
-if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
-endif
 " let g:deoplete#disable_auto_complete = 1
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 """""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'udalov/kotlin-vim', { 'for': 'kotlin' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 "Plug 'mhartington/nvim-typescript', { 'for': 'typescript' }

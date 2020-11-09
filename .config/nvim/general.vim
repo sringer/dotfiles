@@ -274,6 +274,7 @@ function! <SID>BufcloseCloseIt()
 endfunction
 
 " file detection
+au BufRead,BufNewFile *.rs set filetype=rust
 au BufRead,BufNewFile *.go set filetype=go
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *.pde set filetype=pde

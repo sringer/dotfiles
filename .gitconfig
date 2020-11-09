@@ -37,3 +37,4 @@
     branches = for-each-ref --sort=committerdate --format='%(committerdate:short) %(refname:short)' refs/heads/ refs/remotes/
 [core]
 	excludesfile = /home/sringer/.gitignore_global
+    editor = /usr/bin/nvim
