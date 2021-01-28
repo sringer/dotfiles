@@ -109,8 +109,8 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 " Linebreak on 500 characters
 set lbr
 set tw=500
@@ -283,6 +283,11 @@ au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile Jakefile setf javascript
 "au BufRead,BufNewFile *.tx set filetype=typescript
+au BufRead,BufNewFile *.hcl set filetype=terraform
+au BufRead,BufNewFile *.tf set filetype=terraform
+au BufRead,BufNewFile *.tfvars set filetype=terraform
+au BufRead,BufNewFile *.tfstate set filetype=terraform
+au BufRead,BufNewFile *.tfstate.backup set filetype=terraform
  
 " set real tabs for go, but show them as 4 spaces and whatnot
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4

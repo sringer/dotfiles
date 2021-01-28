@@ -9,14 +9,16 @@ source $HOME/.config/nvim/keybindings.vim
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'rking/ag.vim'
 
-nmap <leader><space> :Ag 
+nmap <leader><space> :Rg 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " map nerdtree to ,n
 nmap <leader>nt :NERDTreeToggle<cr>
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-nnoremap <C-p> :FZF<CR>
+nnoremap <C-p> :GFiles<CR>
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.6 } }
+let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4"
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Deoplete reqs
 """""""""""""""""""""""""""""""""""""""""""""""""
@@ -50,6 +52,9 @@ let g:ale_fixers = { 'javascript': ['eslint'] }
 " Set this setting in vimrc if you want to fix files automatically on save.
 " This is off by default.
 let g:ale_fix_on_save = 1
+
+Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
+let g:terraform_fmt_on_save=1
 
 nmap <leader>lt :ALEToggle<cr>
 nmap <leader>ln :ALENext<cr>
